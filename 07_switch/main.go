@@ -58,7 +58,8 @@ func main() {
 	// - You can pass them as arguments to other functions.
 	// - You can return them from functions.
 
-	whoAmI := func(i interface{}) {
+	// whoAmI := func(i interface{}) {} // Use interface or any
+	whoAmI := func(i any) {
 		// 'i.(type)' is used in a type switch to determine the actual type of 'i'.
 		switch variableType := i.(type) {
 		case int:
